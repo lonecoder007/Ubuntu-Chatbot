@@ -29,7 +29,7 @@ def load_markdown_files(directory):
 def split_documents(documents):
     """Splits the documents into smaller chunks."""
     print("Splitting documents into smaller chunks...")
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size= 1000, chunk_overlap=100)
     chunks = text_splitter.split_documents(documents)
     return chunks
 
